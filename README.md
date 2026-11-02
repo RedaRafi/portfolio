@@ -40,6 +40,10 @@ Use an HTTP server rather than opening `index.html` directly: browsers restrict 
 
 The site uses relative URLs and works in a project subdirectory. No custom domain or custom GitHub Actions workflow is necessary. See GitHub's official [publishing source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for the branch publishing workflow and free-plan availability.
 
+### Redirect the account root to this portfolio
+
+To send `https://redarafi.github.io/` to `https://redarafi.github.io/portfolio/`, the redirect page must be published from the separate public repository named `RedaRafi.github.io`. This portfolio repository publishes at `/portfolio/` and its `index.html` must stay as the portfolio homepage. Copy `github-pages-root/index.html` from this project into the root of `RedaRafi.github.io`, then publish that repository with GitHub Pages from its `main` branch and root folder. The redirect page includes a fallback link for visitors whose browser does not follow the automatic redirect.
+
 ## Run the Python example
 
 Python 3.10+ is sufficient; only the standard library is used.

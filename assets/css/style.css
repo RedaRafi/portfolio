@@ -1,36 +1,38 @@
 /* One palette, shared spacing, and a few purposeful components. No framework. */
 :root {
   color-scheme: dark;
-  --bg: #111512;
-  --surface: #171c18;
-  --surface-raised: #1d231e;
-  --text: #edeee5;
-  --muted: #a4ada1;
-  --faint: #818d80;
-  --line: #2a332b;
-  --accent: #d0ee97;
-  --accent-ink: #202a17;
-  --accent-soft: #212e20;
-  --warm: #e3ba88;
-  --error: #e9a69c;
+  --bg: #101722;
+  --surface: #151f2d;
+  --surface-raised: #1b293a;
+  --text: #edf3fa;
+  --muted: #a7b7ca;
+  --faint: #8498af;
+  --line: #2b3b50;
+  --brand: #0E4C92;
+  --accent: #9bc8f5;
+  --accent-ink: #10243a;
+  --accent-soft: #1d2c3c;
+  --warm: #efc58d;
+  --error: #f0a6a6;
   --max-width: 1240px;
   --mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 [data-theme="light"] {
   color-scheme: light;
-  --bg: #f5f5ed;
-  --surface: #eeefe5;
-  --surface-raised: #e6e9dd;
-  --text: #202920;
-  --muted: #56614f;
-  --faint: #64715c;
-  --line: #d1d8c9;
-  --accent: #3f651e;
+  --bg: #f3f7fc;
+  --surface: #ffffff;
+  --surface-raised: #eaf1f9;
+  --text: #17283b;
+  --muted: #4d6279;
+  --faint: #617890;
+  --line: #d1deec;
+  --brand: #0E4C92;
+  --accent: #0E4C92;
   --accent-ink: #fff;
-  --accent-soft: #e0e9d4;
-  --warm: #855319;
-  --error: #a33b2d;
+  --accent-soft: #dce9f7;
+  --warm: #87521c;
+  --error: #a33b45;
 }
 
 * {
@@ -312,6 +314,17 @@ h1, h2, h3 {
   margin-bottom: 28px;
 }
 
+.hero-photo {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  object-position: center 38%;
+  border: 3px solid var(--brand);
+  border-radius: 50%;
+  margin-bottom: 25px;
+  box-shadow: 0 0 0 7px color-mix(in srgb, var(--brand) 14%, transparent);
+}
+
 h1 {
   font-size: clamp(41px, 4.6vw, 66px);
   letter-spacing: -2.8px;
@@ -352,8 +365,8 @@ h1 {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: var(--accent-ink);
+  background: var(--brand);
+  color: #fff;
 }
 
 .button-primary:hover {
@@ -498,7 +511,7 @@ h1 {
 
 .cube-py {
   font: 600 43px "Segoe UI", sans-serif;
-  fill: #243716;
+  fill: #10243a;
   letter-spacing: -3px;
   transform-box: fill-box;
   transform-origin: center;
@@ -507,7 +520,7 @@ h1 {
 .cube-code {
   text-anchor: middle;
   font: 20px var(--mono);
-  fill: #d7edc1;
+  fill: #d5e9ff;
   opacity: .7;
 }
 
@@ -691,7 +704,7 @@ h2 {
 }
 
 .aws-visual {
-  background: linear-gradient(145deg, #27322555, #1a221600);
+  background: linear-gradient(145deg, #18365b66, #10172200);
 }
 
 .mini-pipeline {
@@ -746,7 +759,7 @@ h2 {
 }
 
 .migration-visual {
-  background: linear-gradient(150deg, #1d302c44, transparent);
+  background: linear-gradient(150deg, #17385d55, transparent);
 }
 
 .migration-diagram {
@@ -769,9 +782,9 @@ h2 {
   display: block;
   width: 34px;
   height: 11px;
-  border: 1px solid #7c9380;
+  border: 1px solid #7390b0;
   border-radius: 4px;
-  background: #7c938015;
+  background: #7390b015;
 }
 
 .elk-stack .mono {
@@ -804,12 +817,12 @@ h2 {
 .mongo-store svg {
   height: 55px;
   width: 37px;
-  fill: #93b782;
+  fill: #78aee3;
 }
 
 .mongo-store svg path:last-child {
   fill: none;
-  stroke: #496a3a;
+  stroke: #2e639e;
 }
 
 .mongo-store .mono {
@@ -818,7 +831,7 @@ h2 {
 }
 
 .lidar-visual {
-  background: linear-gradient(150deg, #34403744, transparent);
+  background: linear-gradient(150deg, #244d7544, transparent);
 }
 
 .point-cloud {
@@ -986,19 +999,19 @@ h2 {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #596456;
+  background: #647c98;
 }
 
 .terminal-dots i:first-child {
-  background: #a36b61;
+  background: #c4767d;
 }
 
 .terminal-dots i:nth-child(2) {
-  background: #a5945c;
+  background: #d3ac65;
 }
 
 .terminal-dots i:last-child {
-  background: #718d5d;
+  background: #659f85;
 }
 
 .lab-topbar > .mono {
@@ -1150,11 +1163,11 @@ h2 {
 }
 
 .code-purple {
-  color: #b7a1d0;
+  color: #c1a9e4;
 }
 
 .code-blue {
-  color: #91bac3;
+  color: #91c8ee;
 }
 
 .code-green {
@@ -1166,11 +1179,11 @@ h2 {
 }
 
 [data-theme="light"] .code-purple {
-  color: #70418d;
+  color: #704c9a;
 }
 
 [data-theme="light"] .code-blue {
-  color: #21627a;
+  color: #17628d;
 }
 
 .source-download {
@@ -1930,7 +1943,7 @@ h2 {
 }
 
 .case-dialog::backdrop {
-  background: #050a07bf;
+  background: #07101dbf;
   backdrop-filter: blur(5px);
 }
 
