@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111512">
+    <meta name="description" content="Reda Rafi — Python developer and data engineer in Toronto. Backend services, reliable data pipelines, AWS, Spark, and distributed systems.">
+    <meta property="og:title" content="Reda Rafi — Python & Data Engineering">
+    <meta property="og:description" content="Thoughtful Python. Reliable data. Explore my engineering work and try an interactive data pipeline.">
+    <meta property="og:type" content="website">
+    <title>Reda Rafi — Python Developer & Data Engineer</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Reda Rafi, back to top"><span class="brand-mark" aria-hidden="true">r<span>r</span><i>.</i></span><span>reda rafi<span class="brand-dot">.</span></span></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#work">Selected work</a>
+          <a href="#playground">Playground<span class="tiny-dot"></span></a>
+          <a href="#experience">Experience</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
+          <a class="header-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+          <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </div>
+      <nav class="mobile-nav container" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#work">Selected work</a>
+        <a href="#playground">Playground</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PYTHON DEVELOPER & DATA ENGINEER</p>
+          <h1 id="hero-heading">Python at the core.<br> Data <span class="serif-accent">in motion.</span></h1>
+          <p class="hero-description">I’m Reda. I turn complex data problems into reliable pipelines and thoughtful Python services—built to work beyond the happy path.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-text" href="./assets/reda-rafi-resume.pdf" download data-profile="resume">Download résumé <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M15.8 8.3c0 4.1-5.8 8.4-5.8 8.4S4.2 12.4 4.2 8.3a5.8 5.8 0 1 1 11.6 0Z"/><circle cx="10" cy="8" r="2"/></svg> Toronto, Canada</span>
+            <span class="meta-divider"></span>
+            <span>8+ years of building things that work</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a Python pipeline connecting source data to reliable outputs">
+          <div class="art-heading">
+            <span class="mono"><span class="file-dot"></span> a little structure. a lot of possibility.</span>
+            <span class="art-index mono">01 / SYSTEMS</span>
+          </div>
+          <svg class="architecture" viewBox="0 0 540 400" role="img" aria-labelledby="architecture-title">
+            <title id="architecture-title">Sources flow through Python validation and transformation to data stores and APIs. Illustrative architecture.</title>
+            <defs>
+              <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".18"/>
+              </pattern>
+              <linearGradient id="cube-top" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#d5f795"/>
+                <stop offset="1" stop-color="#9dcf58"/>
+              </lineargradient>
+              <linearGradient id="cube-front" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#b4dc79"/>
+                <stop offset="1" stop-color="#87b54c"/>
+              </lineargradient>
+              <linearGradient id="cube-side" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#7d9c57"/>
+                <stop offset="1" stop-color="#547333"/>
+              </lineargradient>
+            </defs>
+            <rect width="540" height="400" fill="url(#dot-grid)"/>
+            <g class="diagram-lines">
+              <path d="M105 122v52l105 59M105 295v-47l105-15M331 233l103-59v-52M331 233l103 60v38"/>
+              <path class="flow-line" d="M105 122v52l105 59M331 233l103-59v-52"/>
+            </g>
+            <g class="source-node">
+              <rect x="57" y="65" width="96" height="59" rx="8"/>
+              <text x="105" y="89" class="node-icon">{ }</text>
+              <text x="105" y="109" class="node-label">SOURCE DATA</text>
+            </g>
+            <g class="source-node">
+              <rect x="57" y="295" width="96" height="59" rx="8"/>
+              <text x="105" y="320" class="node-icon">↳</text>
+              <text x="105" y="341" class="node-label">EVENT STREAMS</text>
+            </g>
+            <g class="source-node">
+              <rect x="386" y="65" width="96" height="59" rx="8"/>
+              <path class="database-symbol" d="M423 79c0-6 22-6 22 0v13c0 6-22 6-22 0Zm0 0c0 6 22 6 22 0m-22 7c0 6 22 6 22 0"/>
+              <text x="434" y="112" class="node-label">DATA PLATFORMS</text>
+            </g>
+            <g class="source-node">
+              <rect x="386" y="295" width="96" height="59" rx="8"/>
+              <text x="434" y="320" class="node-icon">⌁</text>
+              <text x="434" y="341" class="node-label">APIs & INSIGHTS</text>
+            </g>
+            <path class="cube-shadow" d="m178 269 93-54 94 54-94 54Z"/>
+            <g class="python-cube">
+              <path d="m198 178 73-42 73 42-73 43Z" fill="url(#cube-top)"/>
+              <path d="m198 178 73 43v82l-73-42Z" fill="url(#cube-front)"/>
+              <path d="m271 221 73-43v83l-73 42Z" fill="url(#cube-side)"/>
+              <path d="m198 178 73 43 73-43m-73 43v82" fill="none" stroke="#e3ffb1" stroke-opacity=".3"/>
+              <text x="220" y="203" transform="skewY(30)" class="cube-py">py</text>
+              <text x="307" y="258" class="cube-code">&lt;/&gt;</text>
+            </g>
+            <g class="diagram-badge">
+              <rect x="196" y="332" width="151" height="28" rx="14"/>
+              <circle cx="212" cy="346" r="3"/>
+              <text x="225" y="350">built for the real world</text>
+            </g>
+            <text x="270" y="86" class="diagram-label">VALIDATE. TRANSFORM. DELIVER.</text>
+          </svg>
+          <div class="art-footer mono">
+            <span><span class="status-dot"></span> reliability by design</span>
+            <span>Python × Data</span>
+          </div>
+        </div>
+      </section>
+      <div class="toolbelt container" aria-label="Core technology stack">
+        <span class="toolbelt-label mono">MY EVERYDAY TOOLKIT</span>
+        <div class="toolbelt-items">
+          <span><b class="tool-symbol">⌘</b> Python</span>
+          <span><b class="tool-symbol">ϟ</b> FastAPI</span>
+          <span><b class="tool-symbol spark-symbol">✳</b> Apache Spark</span>
+          <span class="aws-word">aws<span class="aws-smile"></span></span>
+          <span><b class="tool-symbol mongo-symbol">♦</b> MongoDB</span>
+          <span><b class="tool-symbol">▥</b> Docker</span>
+        </div>
+      </div>
+      <section class="section container" id="work" aria-labelledby="work-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">01</span> SELECTED WORK</p>
+            <h2 id="work-heading">Engineering, <span class="serif-accent">with intent.</span></h2>
+          </div>
+          <p class="section-intro">A few problems I’ve worked on.<br> And the thinking behind the solutions.</p>
+        </div>
+        <div class="work-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual aws-visual" aria-hidden="true">
+              <div class="visual-topline mono">
+                <span>PIPELINE ARCHITECTURE</span>
+                <span>01</span>
+              </div>
+              <div class="mini-pipeline">
+                <div>
+                  <span class="service-icon">▱</span>
+                  <b>S3</b>
+                  <small>raw events</small>
+                </div>
+                <span class="mini-connector">····→</span>
+                <div class="service-highlight">
+                  <span class="service-icon">λ</span>
+                  <b>Glue / Spark</b>
+                  <small>transform</small>
+                </div>
+                <span class="mini-connector">····→</span>
+                <div>
+                  <span class="service-icon">▤</span>
+                  <b>Redshift</b>
+                  <small>analytics</small>
+                </div>
+              </div>
+              <span class="visual-caption mono">ingest → validate → model → serve</span>
+            </div>
+            <div class="project-content">
+              <p class="project-context mono">CAPGEMINI <span>2021 — 2024</span></p>
+              <h3>From raw data to<br> reliable decisions.</h3>
+              <p>Python and Spark workflows on AWS, with data quality checks and performance optimization built into the process.</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>PySpark</span>
+                <span>AWS</span>
+                <span>ETL / ELT</span>
+              </div>
+              <button class="project-link" data-case="aws" type="button">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual migration-visual" aria-hidden="true">
+              <div class="visual-topline mono">
+                <span>SOURCE OF TRUTH</span>
+                <span>02</span>
+              </div>
+              <div class="migration-diagram">
+                <div class="elk-stack">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <span class="mono">ELK</span>
+                </div>
+                <span class="migration-arrow">→<small class="mono">normalize</small></span>
+                <div class="mongo-store">
+                  <svg viewBox="0 0 40 56">
+                    <path d="M20 1C12 13 3 22 8 36c2 6 7 10 12 13 5-4 10-8 12-14C36 22 27 11 20 1Z"/>
+                    <path d="M20 15v40"/>
+                  </svg>
+                  <span class="mono">MongoDB</span>
+                </div>
+              </div>
+              <span class="visual-caption mono">less fragmentation. more trust.</span>
+            </div>
+            <div class="project-content">
+              <p class="project-context mono">SOFRECOM <span>2024 — PRESENT</span></p>
+              <h3>One consistent<br> source of truth.</h3>
+              <p>Historical data migration from ELK to MongoDB, backed by standardized models and Python services.</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>MongoDB</span>
+                <span>FastAPI</span>
+              </div>
+              <button class="project-link" data-case="migration" type="button">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual lidar-visual" aria-hidden="true">
+              <div class="visual-topline mono">
+                <span>POINT CLOUD PROCESSING</span>
+                <span>03</span>
+              </div>
+              <svg class="point-cloud" viewBox="0 0 280 136">
+                <g class="point-cloud-dots"></g>
+                <g class="lidar-box">
+                  <path d="m84 51 63-25 54 23-62 27Zm0 0v43l55 26V76m62-27v43l-62 28M84 94l63-25 54 23m-54-66v43"/>
+                  <path d="M68 116h151" stroke-dasharray="2 5"/>
+                </g>
+                <text x="185" y="29">object_01</text>
+              </svg>
+              <span class="visual-caption mono">finding structure in three dimensions</span>
+            </div>
+            <div class="project-content">
+              <p class="project-context mono">UM6P-CS <span>2021</span></p>
+              <h3>Making sense<br> of spatial data.</h3>
+              <p>Python-based feature extraction and 2D/3D object detection approaches for LiDAR research datasets.</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>LiDAR</span>
+                <span>Data science</span>
+              </div>
+              <button class="project-link" data-case="lidar" type="button">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="work-note mono"><span aria-hidden="true">↳</span> Professional work described from my résumé. Architecture visuals are illustrative.</p>
+      </section>
+      <section class="playground-section" id="playground" aria-labelledby="playground-heading">
+        <div class="container section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="section-number">02</span> THE PLAYGROUND <span class="label-pill">INTERACTIVE</span></p>
+              <h2 id="playground-heading">Don’t just read it.<br> <span class="serif-accent">Run it.</span></h2>
+            </div>
+            <div class="playground-intro">
+              <p>Good pipelines expect messy data. Try this small one: inspect the input, run the checks, and see what makes it through.</p>
+              <p class="mono subtle">SAMPLE ORDER EVENTS · ALL AMOUNTS IN CAD</p>
+            </div>
+          </div>
+          <div class="lab-shell">
+            <div class="lab-topbar">
+              <div class="terminal-dots" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <span class="mono">event_pipeline <span class="subtle">/ interactive demo</span></span>
+              <span class="local-badge mono"><span class="status-dot"></span> runs in your browser</span>
+            </div>
+            <div class="lab-body">
+              <div class="lab-editor">
+                <div class="tabs" role="tablist" aria-label="Pipeline input">
+                  <button type="button" role="tab" aria-selected="true" aria-controls="input-panel" id="input-tab" tabindex="0">events.json <span class="tab-dot"></span></button>
+                  <button type="button" role="tab" aria-selected="false" aria-controls="code-panel" id="code-tab" tabindex="-1">pipeline.py</button>
+                </div>
+                <div class="editor-panel" role="tabpanel" id="input-panel" aria-labelledby="input-tab">
+                  <div class="editor-description">
+                    <label for="event-input">The input is yours to break.</label>
+                    <button class="small-text-button" type="button" id="reset-input">Reset sample ↺</button>
+                  </div>
+                  <textarea id="event-input" spellcheck="false" aria-describedby="input-hint" aria-label="Edit sample events as a JSON array" placeholder="Loading sample events…"></textarea>
+                  <p id="input-hint" class="editor-hint mono">JSON array · CA / EU / US · YYYY-MM-DD · up to 5,000 events</p>
+                </div>
+                <div class="editor-panel code-panel" role="tabpanel" id="code-panel" aria-labelledby="code-tab" hidden>
+                  <p class="editor-description">The same contract, in Python.</p>
+                  <pre><code><span class="code-comment"># A valid row earns its place.</span>
+<span class="code-purple">for</span> row_number, record <span class="code-purple">in</span> <span class="code-blue">enumerate</span>(records, start=<span class="code-orange">1</span>):
+    <span class="code-purple">try</span>:
+        event = <span class="code-blue">validate_event</span>(record)
+    <span class="code-purple">except</span> ValueError <span class="code-purple">as</span> error:
+        rejected.append({
+            <span class="code-green">"row"</span>: row_number,
+            <span class="code-green">"reason"</span>: <span class="code-blue">str</span>(error),
+        })
+        <span class="code-purple">continue</span>
+
+    <span class="code-purple">if</span> event[<span class="code-green">"event_id"</span>] <span class="code-purple">in</span> seen:
+        duplicates.append(event)
+        <span class="code-purple">continue</span>
+
+    seen.add(event[<span class="code-green">"event_id"</span>])
+    accepted.append(event)
+
+    <span class="code-comment"># Integer cents keep the totals honest.</span>
+    total_cents += event[<span class="code-green">"amount_cents"</span>]</code></pre>
+                  <a class="small-text-button source-download" href="./examples/pipeline.py" download>Download complete Python example ↓</a>
+                  <p class="editor-hint mono">Excerpt · run the full example locally with Python 3.10+</p>
+                </div>
+                <div class="lab-controls">
+                  <button class="button button-primary" id="run-pipeline" type="button" disabled><span aria-hidden="true">▶</span> Run pipeline</button>
+                  <span class="mono" id="run-state">Loading sample…</span>
+                </div>
+              </div>
+              <div class="lab-results">
+                <div class="results-heading">
+                  <h3>Pipeline output</h3>
+                  <span class="mono" id="execution-time">READY WHEN YOU ARE</span>
+                </div>
+                <ol class="pipeline-stages" aria-label="Pipeline stages">
+                  <li data-stage="0"><span>01</span><b>Validate</b><small>schema & quality</small></li>
+                  <li data-stage="1"><span>02</span><b>Deduplicate</b><small>first valid event</small></li>
+                  <li data-stage="2"><span>03</span><b>Aggregate</b><small>exact totals</small></li>
+                </ol>
+                <div class="result-metrics">
+                  <div>
+                    <span class="mono">ACCEPTED</span>
+                    <strong id="accepted-count">—</strong>
+                    <small>clean events</small>
+                  </div>
+                  <div>
+                    <span class="mono">QUARANTINED</span>
+                    <strong id="rejected-count">—</strong>
+                    <small>needs attention</small>
+                  </div>
+                  <div>
+                    <span class="mono">DUPLICATES</span>
+                    <strong id="duplicate-count">—</strong>
+                    <small>safely skipped</small>
+                  </div>
+                </div>
+                <div class="aggregate-heading">
+                  <span class="mono">VALUE BY REGION</span>
+                  <span id="total-value">CAD —</span>
+                </div>
+                <div id="region-chart" class="region-chart">
+                  <div class="chart-empty">
+                    <span aria-hidden="true">⌁</span>
+                    <p>A little data. A clearer picture.<br> Run the pipeline to see the result.</p>
+                  </div>
+                </div>
+                <div class="run-log" id="run-log" role="status" aria-live="polite">
+                  Waiting for the first run.
+                </div>
+                <details class="quality-details" id="quality-details" hidden>
+                  <summary>Inspect quality report <span id="quality-count"></span></summary>
+                  <ul id="quality-list"></ul>
+                </details>
+                <button class="small-text-button export-button" type="button" id="export-results" disabled>Download result.json <span aria-hidden="true">↓</span></button>
+              </div>
+            </div>
+            <div class="lab-footer mono">
+              <span><span aria-hidden="true">⌘</span> Real transformations. Illustrative data.</span>
+              <span>Your edits stay in this browser tab.</span>
+            </div>
+          </div>
+          <noscript>
+            <p class="noscript-note">Enable JavaScript for the interactive demo, or <a href="./examples/pipeline.py" download>download the Python example</a> and run it locally.</p>
+          </noscript>
+        </div>
+      </section>
+      <section class="section container expertise-section" id="expertise" aria-labelledby="expertise-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> HOW I BUILD</p>
+            <h2 id="expertise-heading">The right tools.<br> <span class="serif-accent">A considered approach.</span></h2>
+          </div>
+          <p class="section-intro">From the first API request to the final dataset,<br> I care about what happens in between.</p>
+        </div>
+        <div class="expertise-grid">
+          <article>
+            <span class="expertise-icon" aria-hidden="true">{ }</span>
+            <h3>Python, with purpose.</h3>
+            <p>Readable services, clear interfaces, and explicit error handling. Code that the next engineer can pick up with confidence.</p>
+            <p class="expertise-stack mono">PYTHON · FASTAPI · FLASK · REST</p>
+          </article>
+          <article>
+            <span class="expertise-icon" aria-hidden="true">⇢</span>
+            <h3>Data you can trust.</h3>
+            <p>ETL and ELT workflows with quality checks, useful data models, and efficient processing—from ingestion to analytics.</p>
+            <p class="expertise-stack mono">PYSPARK · SQL · PANDAS · MONGODB</p>
+          </article>
+          <article>
+            <span class="expertise-icon" aria-hidden="true">▱</span>
+            <h3>Built for the whole system.</h3>
+            <p>Cloud workflows, event-driven services, and observable deployments. Performance and reliability are part of the design.</p>
+            <p class="expertise-stack mono">AWS · DOCKER · KAFKA · CI/CD</p>
+          </article>
+        </div>
+      </section>
+      <section class="section container experience-section" id="experience" aria-labelledby="experience-heading">
+        <div class="experience-intro">
+          <p class="eyebrow"><span class="section-number">04</span> THE JOURNEY</p>
+          <h2 id="experience-heading">Always building.<br> <span class="serif-accent">Always learning.</span></h2>
+          <p>From commercial web applications to research datasets and cloud data platforms. Each chapter has added a different way to think about a problem.</p>
+          <a class="inline-link" href="./assets/reda-rafi-resume.pdf" target="_blank" rel="noopener" data-profile="resume">The full story, in my résumé <span aria-hidden="true">↗</span></a>
+          <div class="education-note">
+            <span class="mono">A FOUNDATION IN SYSTEMS</span>
+            <h3>Master’s · Intelligent &<br> Decision-Making Systems</h3>
+            <p>Faculty of Sciences, Fez · 2021<br> <span class="subtle">Credential evaluated by WES</span></p>
+            <h3>Bachelor’s · Distributed<br> Computer Systems</h3>
+            <p>FST Marrakech · 2018</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-date mono">
+              SEP 2024 — PRESENT
+              <span>NOW</span>
+            </div>
+            <h3>Senior Python Developer</h3>
+            <p class="timeline-company">SOFRECOM <span>Rabat, Morocco</span></p>
+            <p>Building Python services and analytics workflows. Leading historical data migration to MongoDB, with standardized models and production data quality practices.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date mono">
+              SEP 2021 — SEP 2024
+            </div>
+            <h3>Python / AWS Developer</h3>
+            <p class="timeline-company">Capgemini <span>Casablanca, Morocco</span></p>
+            <p>Developed data processing workflows, distributed services, and analytics datasets on AWS. Optimized Spark workloads with partitioning, pruning, and efficient joins.</p>
+            <div class="tags">
+              <span>AWS</span>
+              <span>PySpark</span>
+              <span>SQL</span>
+              <span>Docker</span>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date mono">
+              MAR 2021 — AUG 2021
+            </div>
+            <h3>Python / Data Science Freelancer</h3>
+            <p class="timeline-company">UM6P-CS <span>Ben Guerir, Morocco</span></p>
+            <p>Worked with PhD researchers on LiDAR feature extraction, 2D/3D detection approaches, and Python processing for research datasets.</p>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date mono">
+              JUN 2018 — MAY 2019
+            </div>
+            <h3>Principal Developer</h3>
+            <p class="timeline-company">Kasbah Productions <span>Marrakech, Morocco</span></p>
+            <p>Developed commercial web applications, improved backend functionality, and supported applications in production.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section container recommendations-section" id="recommendations" aria-labelledby="recommendations-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">05</span> RECOMMENDATIONS</p>
+            <h2 id="recommendations-heading">Good work.<br> <span class="serif-accent">Better together.</span></h2>
+          </div>
+          <p class="section-intro">A few words from people I’ve worked with.<br> Original words, in English and French.</p>
+        </div>
+        <!-- Static snapshot; scripts/import_linkedin.py regenerates it from data/recommendations.json. -->
+        <div class="recommendations-grid" id="recommendations-grid">
+          <!-- recommendations:start -->
+          <figure class="recommendation-card" data-recommendation-id="dominique-laporte">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="en">
+              <p>He demonstrated strong expertise in Cloud technologies (particularly AWS) and software development (Python, Git), combined with a high level of autonomy, rigor, and a strong innovative mindset.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="en">
+                <p>I had the pleasure of working with Reda for several years within the Digital Transformation Office at ALE International. He demonstrated strong expertise in Cloud technologies (particularly AWS) and software development (Python, Git), combined with a high level of autonomy, rigor, and a strong innovative mindset.</p>
+                <p>Reda was a key contributor to the deployment of our Data Factory, ensuring that security, governance, and maintainability were fully integrated. His ability to deliver on commitments, challenge existing solutions, and recommend the most appropriate technologies clearly sets him apart.</p>
+                <p>I highly recommend Reda for Big Data Engineering roles, as well as any Engineering position requiring strong technical leadership and a focus on innovation.</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2025-12-31">Dec 31, 2025</time>
+              <span>Dominique was Reda’s client</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">DL</span>
+              <span><strong>Dominique Laporte</strong><small>Customer Services Director at Alcatel-Lucent</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Dominique Laporte’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="hasnaa-dghoughi">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="fr">
+              <p>Ses qualités relationnelles, sa force de proposition, sa soif d&#x27;apprendre et ses compétences techniques ont fait de lui un key people au sein de son projet et aussi au sein de la communauté Data.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="fr">
+                <p>Reda a su se démarquer dès ses premiers mois chez Capgemini et a su montrer de la valeur ajoutée pour évoluer très rapidement vers le rôle de Tech Lead. Ses qualités relationnelles, sa force de proposition, sa soif d&#x27;apprendre et ses compétences techniques ont fait de lui un key people au sein de son projet et aussi au sein de la communauté Data.</p>
+                <p>Ça était un plaisir de t&#x27;accompagner durant les 3 années passées à Capgemini.</p>
+                <p>je suis certaine que tu vas continuer à rayonner ailleurs.</p>
+                <p>très bonne continuation!</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2024-08-07">Aug 07, 2024</time>
+              <span>Senior colleague; did not manage Reda directly</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">HD</span>
+              <span><strong>Hasnaa DGHOUGHI</strong><small>People Unit Manager - Staffing Head Manager C&amp;CA - Java Cloud &amp; Sales</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Hasnaa DGHOUGHI’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="hicham-raouf">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="en">
+              <p>Reda is also pro-active to analyze problems, identify the root causes and to look for the most appropriate solution.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="en">
+                <p>It was a pleasure to work with Reda ! Not only his efficient working performance but also his pleasant personality.</p>
+                <p>he is organized, respects the priorities and gives his best to produce results.</p>
+                <p>Reda is also pro-active to analyze problems, identify the root causes and to look for the most appropriate solution.</p>
+                <p>I would happily recommend Reda for any position and I&#x27;d be glad to get the chance to work with his again.</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2024-08-06">Aug 06, 2024</time>
+              <span>Worked with Reda on the same team</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">HR</span>
+              <span><strong>Hicham RAOUF, SAFe®,PSM1®</strong><small>Managing Solution Architect, CTO Insights &amp; Data Maroc</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Hicham RAOUF, SAFe®,PSM1®’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="ghofrane-benaziz">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="fr">
+              <p>Reda a contribué à la préparation et l&#x27;animation de la formation AWS Cloud Practitioner…</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="fr">
+                <p>Reda a contribué à la préparation et l&#x27;animation de la formation AWS Cloud Practitioner dont l&#x27;objectif était d&#x27;acculturer les collaborateurs de différents profils sur le Cloud AWS. Il a été toujours disponible et engagé,</p>
+                <p>Merci Reda pour cette belle contribution.</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2024-08-02">Aug 02, 2024</time>
+              <span>Senior colleague; did not manage Reda directly</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">GB</span>
+              <span><strong>Ghofrane Benaziz</strong><small>Managing Entreprise Architect</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Ghofrane Benaziz’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="faissal-zita">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="fr">
+              <p>Reda a démontré des compétences exceptionnelles en utilisant Python ainsi que les technologies AWS pour gérer et analyser de grandes quantités de données dans des environnements cloud.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="fr">
+                <p>En tant que career manager de Reda Rafi chez Capgemini, j&#x27;ai eu l&#x27;opportunité de suivre de près son évolution et ses performances en tant qu&#x27;ingénieur en Big Data. Reda a démontré des compétences exceptionnelles en utilisant Python ainsi que les technologies AWS pour gérer et analyser de grandes quantités de données dans des environnements cloud.</p>
+                <p>Reda a une capacité remarquable à traiter des données complexes tout en assurant leur intégrité et leur sécurité. Il est également très engagé dans le partage de ses connaissances et la collaboration avec l&#x27;équipe, contribuant ainsi à un environnement de travail positif et productif.</p>
+                <p>Son dévouement à l&#x27;excellence et son désir constant d&#x27;améliorer ses compétences font de Reda un atout précieux pour notre équipe et pour l&#x27;entreprise. Je le recommande vivement pour toute opportunité future dans le domaine du Big Data</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2024-07-29">Jul 29, 2024</time>
+              <span>Managed Reda directly</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">FZ</span>
+              <span><strong>Faissal Zita</strong><small>Senior Data Engineer chez Capgemini</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Faissal Zita’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="khalil-el-kouhen">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="en">
+              <p>Beyond technical skills, Reda is a collaborative and effective communicator. I&#x27;m confident he would be a valuable asset to any team.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="en">
+                <p>I&#x27;ve had the pleasure of collaborating with Reda on numerous candidate interviews at Capgemini.</p>
+                <p>He onsistently demonstrates a deep understanding of data engineering principles and a mastery of Python and AWS. His insightful questions and technical expertise have been instrumental in evaluating candidates.</p>
+                <p>Beyond technical skills, Reda is a collaborative and effective communicator. I&#x27;m confident he would be a valuable asset to any team.</p>
+                <p>I highly recommend Reda for any data engineering role, particularly those involving Python and AWS and I&#x27;m hopeful we&#x27;ll have the opportunity to welcome him back to Capgemini someday.</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2024-07-22">Jul 22, 2024</time>
+              <span>Managed Reda directly</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">KE</span>
+              <span><strong>Khalil EL KOUHEN</strong><small>Workforce Transformation Manager Capgemini TS - Maroc</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Khalil EL KOUHEN’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="mohammed-reda-ouassini">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="en">
+              <p>His exceptional technical skills and unwavering motivation significantly enhanced our project&#x27;s technical landscape.</p>
+            </blockquote>
+            <details class="recommendation-full">
+              <summary>Read full recommendation</summary>
+              <div lang="en">
+                <p>I had the privilege of managing Reda RAFI as our Technical Reference on the Datalake project. His exceptional technical skills and unwavering motivation significantly enhanced our project&#x27;s technical landscape. Reda&#x27;s proactive approach to implementing innovative solutions streamlined not only his work but also greatly improved the team&#x27;s overall efficiency. I have no doubt that Reda RAFI will continue to excel in his role as a Technical Reference, and any team would be fortunate to have him.</p>
+              </div>
+            </details>
+            <div class="recommendation-meta">
+              <time datetime="2023-10-13">Oct 13, 2023</time>
+              <span>Managed Reda directly</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">MR</span>
+              <span><strong>Mohammed Réda OUASSINI</strong><small>Engagement Manager</small></span>
+              <a href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer" aria-label="Read Mohammed Réda OUASSINI’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <figure class="recommendation-card" data-recommendation-id="luc-barthel">
+            <span class="recommendation-mark" aria-hidden="true">“</span>
+            <blockquote lang="fr">
+              <p>C’est un profil fiable, impliqué et orienté solutions.</p>
+            </blockquote>
+            <p class="recommendation-excerpt-note">Short public excerpt · full text on LinkedIn</p>
+            <div class="recommendation-meta">
+              <span>Public LinkedIn excerpt</span>
+            </div>
+            <figcaption>
+              <span class="recommendation-avatar" aria-hidden="true">LB</span>
+              <span><strong>Luc Barthel</strong><small>Professional recommendation</small></span>
+              <a href="https://ma.linkedin.com/in/redarafi/fr" target="_blank" rel="noopener noreferrer" aria-label="Read Luc Barthel’s recommendation on LinkedIn">↗</a>
+            </figcaption>
+          </figure>
+          <!-- recommendations:end -->
+        </div>
+        <div class="recommendation-actions">
+          <button class="button recommendation-more" id="show-all-recommendations" type="button" aria-expanded="false" aria-controls="recommendations-grid" hidden>Show all recommendations</button>
+          <button class="small-text-button" id="refresh-recommendations" type="button" hidden>? Refresh recommendations</button>
+          <span class="mono subtle" id="recommendations-status" role="status" aria-live="polite">Published recommendations</span>
+        </div>
+        <a class="inline-link recommendations-link" href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer">View recommendations on LinkedIn <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-inner">
+          <div>
+            <p class="eyebrow"><span class="status-dot"></span> GOOD WORK STARTS WITH A CONVERSATION</p>
+            <h2 id="contact-heading">Have a complex problem?<br> <span class="serif-accent">Let’s make it work.</span></h2>
+            <p>A Python service, a data platform, or a team that cares about building well. I’d like to hear about it.</p>
+            <a class="contact-email" href="mailto:reda.rafi.pro@gmail.com" data-profile="email">reda.rafi.pro@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/redarafi/" target="_blank" rel="noopener noreferrer" data-profile="linkedin"><span><b class="social-icon" aria-hidden="true">in</b>LinkedIn</span><span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/RedaRafi" data-profile="github" target="_blank" rel="noopener noreferrer"><span><b class="social-icon" aria-hidden="true">&lt;/&gt;</b>GitHub</span><span aria-hidden="true">↗</span></a>
+            <a href="./assets/reda-rafi-resume.pdf" download data-profile="resume"><span><b class="social-icon" aria-hidden="true">↳</b>Résumé</span><span aria-hidden="true">↓</span></a>
+            <button type="button" id="copy-email"><span><b class="social-icon" aria-hidden="true">▢</b><span id="copy-label">Copy email address</span></span><span aria-hidden="true">↗</span></button>
+            <p id="copy-feedback" role="status" class="mono subtle"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <a class="brand footer-brand" href="#">reda rafi<span class="brand-dot">.</span></a>
+      <p>Thoughtfully built. Always a work in progress.</p>
+      <span class="mono">© <span id="copyright-year">2026</span> REDA RAFI</span>
+      <a href="#" class="back-top" aria-label="Back to top">↑</a>
+    </footer>
+    <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title">
+      <div class="dialog-toolbar">
+        <span class="mono">ENGINEERING NOTES / SELECTED WORK</span>
+        <button class="icon-button" id="close-case" type="button" aria-label="Close case study">✕</button>
+      </div>
+      <div class="dialog-content">
+        <p class="eyebrow" id="case-context"></p>
+        <h2 id="case-title"></h2>
+        <p class="case-lead" id="case-lead"></p>
+        <div class="case-tags tags" id="case-tags"></div>
+        <div id="case-sections"></div>
+        <p class="case-footnote">Based on the professional experience described in my résumé. These notes describe my contribution without exposing employer source code or asserting unreported performance metrics.</p>
+        <a class="inline-link" href="./assets/reda-rafi-resume.pdf" target="_blank" rel="noopener">Read the résumé <span aria-hidden="true">↗</span></a>
+      </div>
+    </dialog>
+  </body>
+</html>

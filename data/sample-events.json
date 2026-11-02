@@ -1,0 +1,14 @@
+[
+  { "event_id": "evt-001", "occurred_at": "2026-10-20", "region": "CA", "amount": "120.00" },
+  { "event_id": "evt-002", "occurred_at": "2026-10-20", "region": "US", "amount": "89.50" },
+  { "event_id": "evt-003", "occurred_at": "2026-10-21", "region": "EU", "amount": "240.00" },
+  { "event_id": "evt-004", "occurred_at": "2026-10-21", "region": " ca ", "amount": "45.00" },
+  { "event_id": "evt-002", "occurred_at": "2026-10-20", "region": "US", "amount": "89.50" },
+  { "event_id": "evt-005", "occurred_at": "2026-10-21", "region": "EU", "amount": "-20.00" },
+  { "event_id": "evt-006", "occurred_at": "2026-10-22", "region": "US", "amount": "79.00" },
+  { "event_id": "evt-007", "occurred_at": "2026-10-22", "region": "CA", "amount": "150.00" },
+  { "event_id": "evt-008", "occurred_at": "2026-02-30", "region": "CA", "amount": "33.00" },
+  { "event_id": "evt-009", "occurred_at": "2026-10-23", "region": "EU", "amount": "65.00" },
+  { "event_id": "evt-010", "occurred_at": "2026-10-23", "region": "US", "amount": "48.00" },
+  { "event_id": "", "occurred_at": "2026-10-23", "region": "CA", "amount": "20.00" }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "reda-rafi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reda Rafi's Python and data engineering portfolio. No build step or dependencies.",
+  "scripts": {
+    "test": "node --test tests/pipeline.test.mjs tests/recommendations.test.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}
