@@ -45,4 +45,9 @@ htmlcov/
 .coverage
 dist/
 build/
+public/
 pipeline-output.json
+
+# Résumés are shared manually by email, never published with the portfolio.
+assets/*resume*.pdf
+assets/*cv*.pdf

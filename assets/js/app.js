@@ -81,21 +81,21 @@ const caseStudies = {
     context: 'CAPGEMINI / PYTHON & AWS / 2021–2024',
     title: 'From raw data to reliable decisions.',
     lead: 'Building Python-based data workflows on AWS that support downstream reporting and analytics.',
-    tags: ['Python', 'SQL', 'PySpark', 'AWS Glue', 'S3', 'Redshift', 'Athena'],
+    tags: ['Python', 'SQL', 'PySpark', 'AWS Glue', 'S3', 'Redshift', 'Athena', 'Docker', 'CloudFormation'],
     sections: [
       { title: 'The problem space', text: 'Large-scale data processing needs more than a successful transformation. Datasets must be useful downstream, failures must be visible, and processing must make effective use of compute and storage.' },
-      { title: 'My contribution', items: ['Developed Python, SQL, and Spark transformation workflows and ETL/ELT pipelines on AWS.', 'Built and optimized datasets for reporting, analytics, and dashboard visualization.', 'Implemented data quality checks, validation, monitoring, and logging.', 'Applied partitioning, data pruning, and efficient joins to improve processing performance.', 'Worked with Docker, CI/CD, and AWS services including Glue, S3, Redshift, Athena, Kinesis, Lambda, EventBridge, SQS, and CloudWatch.'] },
+      { title: 'My contribution', items: ['Developed Python, SQL, and Spark transformation workflows and ETL/ELT pipelines on AWS.', 'Built and optimized datasets for reporting, analytics, and dashboard visualization.', 'Implemented data quality checks, validation, monitoring, and logging.', 'Applied partitioning, data pruning, and efficient joins to improve processing performance.', 'Developed Python microservices and distributed systems in Linux/Unix environments, collaborating through Git and GitHub.', 'Worked with AWS services including Glue, S3, Redshift, Athena, Kinesis, Lambda, EventBridge, SQS, and CloudWatch.', 'Deployed and operated Docker services on ECS/EKS and EC2, exposing REST APIs through API Gateway and load balancers.', 'Automated container deployments and AWS resources with CI/CD pipelines and CloudFormation.'] },
       { title: 'The engineering lens', text: 'Schema contracts, partition strategy, and useful failure signals belong in the design conversation early. The playground below gives a small, executable example of validation, duplicate handling, and exact aggregation; it is a separate demonstration rather than employer code.' },
     ],
   },
   migration: {
     context: 'SOFRECOM / SENIOR PYTHON DEVELOPER / 2024–PRESENT',
     title: 'One consistent source of truth.',
-    lead: 'Leading a historical data migration from ELK to MongoDB while developing Python services and analytics workflows.',
-    tags: ['Python', 'MongoDB', 'ELK', 'FastAPI', 'Flask', 'Data modeling'],
+    lead: 'Turning historical ELK data into a reliable MongoDB source of truth, supported by Python APIs and asynchronous data workflows.',
+    tags: ['Python', 'MongoDB', 'ELK', 'FastAPI', 'Flask', 'Celery', 'RabbitMQ', 'Data modeling'],
     sections: [
       { title: 'The problem space', text: 'Historical data is only useful when its meaning survives the move. A migration also needs data models that make the resulting information traceable, understandable, and accessible to consuming systems.' },
-      { title: 'My contribution', items: ['Lead the migration of historical ELK data to MongoDB and design scalable data structures for a reliable source of truth.', 'Design standardized data models and processing workflows to improve traceability and governance.', 'Develop Python, Flask, and FastAPI backend services to expose datasets and support platform integrations.', 'Implement validation and data quality practices for production datasets.', 'Build reporting datasets and automate data processes supporting customer engagement and campaign analysis.'] },
+      { title: 'My contribution', items: ['Led the migration of historical ELK data to MongoDB, designing document schemas and indexing for a reliable source of truth.', 'Design standardized data models and processing workflows to improve traceability and governance.', 'Develop Flask and FastAPI REST services with input validation and structured error handling to serve datasets and support integrations.', 'Implemented Celery and RabbitMQ background processing for long-running data workflows.', 'Implement validation and data quality practices for production datasets.', 'Build reporting datasets, dashboards, and automated data processes supporting customer engagement and campaign analysis.', 'Own end-to-end delivery of multi-month features, collaborate on technical design specifications, and contribute estimates in sprint planning.', 'Conduct peer code reviews, mentor junior engineers, and optimize performance to meet service-level agreements.'] },
       { title: 'The engineering lens', text: 'I treat data quality and model consistency as part of the migration itself. Clear models and explicit validation make it easier to reason about how historical records become dependable inputs to reporting and application services.' },
     ],
   },
@@ -139,6 +139,7 @@ function setupCaseStudies() {
     document.body.classList.add('dialog-open');
   }));
   select('#close-case').addEventListener('click', () => dialog.close());
+  select('#case-resume-request').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
   dialog.addEventListener('click', (event) => {
     const rect = dialog.getBoundingClientRect();

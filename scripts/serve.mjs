@@ -1,4 +1,4 @@
-/** Minimal local preview. Production is plain static files on GitHub Pages. */
+/** Minimal local preview. Production is plain static files on GitLab Pages. */
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#101722">
-    <meta name="description" content="Reda Rafi — Python developer and data engineer in Toronto. Backend services, reliable data pipelines, AWS, Spark, and distributed systems.">
+    <meta name="description" content="Reda Rafi — Python developer and data engineer in Toronto. REST APIs, Django, FastAPI, AWS, Spark, asynchronous services, and reliable data pipelines.">
     <meta property="og:title" content="Reda Rafi — Python & Data Engineering">
     <meta property="og:description" content="Thoughtful Python. Reliable data. Explore my engineering work and try an interactive data pipeline.">
     <meta property="og:type" content="website">
@@ -45,7 +45,7 @@
           <p class="hero-description">I’m Reda. I turn complex data problems into reliable pipelines and thoughtful Python services—built to work beyond the happy path.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="button button-text" href="./assets/reda-rafi-resume.pdf" download data-profile="resume">Download résumé <span aria-hidden="true">↓</span></a>
+            <a class="button button-text" href="#resume-request">Request my résumé <span aria-hidden="true">↗</span></a>
           </div>
           <div class="hero-meta">
             <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M15.8 8.3c0 4.1-5.8 8.4-5.8 8.4S4.2 12.4 4.2 8.3a5.8 5.8 0 1 1 11.6 0Z"/><circle cx="10" cy="8" r="2"/></svg> Toronto, Canada</span>
@@ -250,6 +250,29 @@
           </article>
         </div>
         <p class="work-note mono"><span aria-hidden="true">↳</span> Professional work described from my résumé. Architecture visuals are illustrative.</p>
+        <article class="personal-project" aria-labelledby="rental-project-heading">
+          <div>
+            <p class="project-context mono">PERSONAL PROJECT <span>LOCAL</span></p>
+            <h3 id="rental-project-heading">Vehicle rental management API.</h3>
+            <p>A Django backend for managing vehicles, customers, bookings, and rental availability, with permissions and booking rules built into the API.</p>
+            <div class="tags">
+              <span>Django</span>
+              <span>Django REST Framework</span>
+              <span>Token authentication</span>
+              <span>Automated tests</span>
+            </div>
+          </div>
+          <div class="personal-project-scope">
+            <h4>What I built</h4>
+            <ul>
+              <li>Vehicle, customer, and rental models with the Django ORM and migrations.</li>
+              <li>Serializers and viewsets with filtering, search, and pagination.</li>
+              <li>User registration, token-based authentication, and role-based permissions.</li>
+              <li>Validation to prevent overlapping bookings, backed by automated tests.</li>
+            </ul>
+            <p class="subtle">Developed locally as a personal project.</p>
+          </div>
+        </article>
       </section>
       <section class="playground-section" id="playground" aria-labelledby="playground-heading">
         <div class="container section">
@@ -386,35 +409,95 @@
           <article>
             <span class="expertise-icon" aria-hidden="true">{ }</span>
             <h3>Python, with purpose.</h3>
-            <p>Readable services, clear interfaces, and explicit error handling. Code that the next engineer can pick up with confidence.</p>
-            <p class="expertise-stack mono">PYTHON · FASTAPI · FLASK · REST</p>
+            <p>Readable REST APIs and microservices, with input validation and structured error handling. FastAPI and Flask in professional work; Django REST Framework in my personal projects.</p>
+            <p class="expertise-stack mono">PYTHON · FASTAPI · FLASK · DJANGO REST FRAMEWORK</p>
           </article>
           <article>
             <span class="expertise-icon" aria-hidden="true">⇢</span>
             <h3>Data you can trust.</h3>
-            <p>ETL and ELT workflows with quality checks, useful data models, and efficient processing—from ingestion to analytics.</p>
-            <p class="expertise-stack mono">PYSPARK · SQL · PANDAS · MONGODB</p>
+            <p>ETL and ELT pipelines with quality checks, useful data models, and efficient processing. Document schemas, indexing, partitioning, pruning, and joins that support reliable downstream data.</p>
+            <p class="expertise-stack mono">PYSPARK · SPARK SQL · PANDAS · MONGODB</p>
           </article>
           <article>
             <span class="expertise-icon" aria-hidden="true">▱</span>
             <h3>Built for the whole system.</h3>
-            <p>Cloud workflows, event-driven services, and observable deployments. Performance and reliability are part of the design.</p>
-            <p class="expertise-stack mono">AWS · DOCKER · KAFKA · CI/CD</p>
+            <p>Asynchronous workflows with Celery and RabbitMQ, event-driven pipelines, and containerized AWS services. Infrastructure and deployments automated with CloudFormation and CI/CD.</p>
+            <p class="expertise-stack mono">AWS · DOCKER · CELERY · RABBITMQ · CLOUDFORMATION</p>
+          </article>
+          <article>
+            <span class="expertise-icon" aria-hidden="true">✓</span>
+            <h3>Quality at every step.</h3>
+            <p>Automated Python tests, API validation, and data quality checks. Defect troubleshooting and production support keep the focus on dependable behavior throughout the software lifecycle.</p>
+            <p class="expertise-stack mono">AUTOMATED TESTING · API VALIDATION · SDLC</p>
+          </article>
+          <article>
+            <span class="expertise-icon" aria-hidden="true">▤</span>
+            <h3>Data that informs decisions.</h3>
+            <p>Reporting datasets and dashboards that turn business requirements into useful analytics, supporting customer engagement and campaign performance.</p>
+            <p class="expertise-stack mono">POWER BI · TABLEAU · LOOKER · KIBANA</p>
+          </article>
+          <article>
+            <span class="expertise-icon" aria-hidden="true">&lt;/&gt;</span>
+            <h3>Delivery as a team effort.</h3>
+            <p>Technical design, multi-month feature ownership, and thoughtful code reviews. I work with stakeholders, estimate work in sprint planning, and mentor junior engineers.</p>
+            <p class="expertise-stack mono">SOLUTION DESIGN · CODE REVIEWS · MENTORSHIP · AGILE</p>
           </article>
         </div>
+        <details class="skills-details">
+          <summary>Explore my full technical toolkit</summary>
+          <dl class="skills-groups">
+            <div>
+              <dt>Python &amp; API development</dt>
+              <dd>Python, object-oriented programming (OOP), Flask, FastAPI, Django, Django REST Framework, RESTful APIs, input validation, structured error handling.</dd>
+            </div>
+            <div>
+              <dt>Data engineering &amp; processing</dt>
+              <dd>ETL/ELT, data pipelines, transformation, modeling, data quality, PySpark, Apache Spark, Spark SQL, Hadoop, Pandas, NumPy. Partitioning, data pruning, efficient joins, and cost/performance optimization.</dd>
+            </div>
+            <div>
+              <dt>Databases &amp; data stores</dt>
+              <dd>SQL, PL/SQL, MySQL, MongoDB, Amazon Redshift, Amazon Athena, Amazon S3, BigQuery. Transactions, isolation levels, locking, deadlocks, document schemas, and indexing.</dd>
+            </div>
+            <div>
+              <dt>Distributed &amp; asynchronous systems</dt>
+              <dd>Microservices architecture, distributed systems, Celery background tasks, RabbitMQ, Kafka, Kinesis, and event-driven pipelines.</dd>
+            </div>
+            <div>
+              <dt>AWS &amp; infrastructure</dt>
+              <dd>Glue, Lambda, S3, Redshift, Athena, EventBridge, SQS, CloudWatch, ECS/EKS, EC2, API Gateway, Elastic Load Balancing, and CloudFormation.</dd>
+            </div>
+            <div>
+              <dt>BI &amp; analytics</dt>
+              <dd>Power BI, Tableau, Looker, Google Data Studio, Kibana, reporting datasets, dashboards, and campaign performance analytics.</dd>
+            </div>
+            <div>
+              <dt>Testing &amp; operations</dt>
+              <dd>Automated testing in Python, REST API validation, data validation and quality checks, monitoring, logging, defect troubleshooting, production support, and performance optimization to meet SLAs.</dd>
+            </div>
+            <div>
+              <dt>Engineering delivery</dt>
+              <dd>Docker, CI/CD, Linux/Unix, Git, GitHub, solution design, technical design specifications, peer code reviews, mentorship, Agile/Scrum, sprint planning, estimation, and the software development lifecycle (SDLC).</dd>
+            </div>
+          </dl>
+        </details>
       </section>
       <section class="section container experience-section" id="experience" aria-labelledby="experience-heading">
         <div class="experience-intro">
           <p class="eyebrow"><span class="section-number">04</span> THE JOURNEY</p>
           <h2 id="experience-heading">Always building.<br> <span class="serif-accent">Always learning.</span></h2>
           <p>From commercial web applications to research datasets and cloud data platforms. Each chapter has added a different way to think about a problem.</p>
-          <a class="inline-link" href="./assets/reda-rafi-resume.pdf" target="_blank" rel="noopener" data-profile="resume">The full story, in my résumé <span aria-hidden="true">↗</span></a>
+          <a class="inline-link" href="#resume-request">Request my résumé for the full story <span aria-hidden="true">↗</span></a>
           <div class="education-note">
             <span class="mono">A FOUNDATION IN SYSTEMS</span>
             <h3>Master’s · Intelligent &<br> Decision-Making Systems</h3>
             <p>Faculty of Sciences, Fez · 2021<br> <span class="subtle">Credential evaluated by WES</span></p>
             <h3>Bachelor’s · Distributed<br> Computer Systems</h3>
             <p>FST Marrakech · 2018</p>
+            <span class="mono">PROFESSIONAL DEVELOPMENT</span>
+            <h3>Building Modern Python Applications on AWS</h3>
+            <p>2021</p>
+            <h3>Neural Networks and Deep Learning</h3>
+            <p>2020</p>
           </div>
         </div>
         <div class="timeline">
@@ -425,11 +508,14 @@
             </div>
             <h3>Senior Python Developer</h3>
             <p class="timeline-company">SOFRECOM <span>Rabat, Morocco</span></p>
-            <p>Building Python services and analytics workflows. Leading historical data migration to MongoDB, with standardized models and production data quality practices.</p>
+            <p>Led the historical ELK-to-MongoDB migration, designing document schemas and indexing. Build Flask and FastAPI services with input validation, structured error handling, and Celery/RabbitMQ background processing.</p>
+            <p>Own multi-month feature delivery, collaborate on technical designs, contribute sprint estimates, review code, and mentor junior engineers. Develop reporting datasets and dashboards for customer engagement and campaign performance.</p>
             <div class="tags">
               <span>Python</span>
               <span>FastAPI</span>
               <span>MongoDB</span>
+              <span>Celery</span>
+              <span>RabbitMQ</span>
             </div>
           </article>
           <article class="timeline-item">
@@ -439,11 +525,13 @@
             <h3>Python / AWS Developer</h3>
             <p class="timeline-company">Capgemini <span>Casablanca, Morocco</span></p>
             <p>Developed data processing workflows, distributed services, and analytics datasets on AWS. Optimized Spark workloads with partitioning, pruning, and efficient joins.</p>
+            <p>Deployed Docker services on ECS/EKS and EC2, exposed REST APIs through API Gateway and load balancers, and automated AWS infrastructure and deployments with CloudFormation and CI/CD.</p>
             <div class="tags">
               <span>AWS</span>
               <span>PySpark</span>
               <span>SQL</span>
               <span>Docker</span>
+              <span>CloudFormation</span>
             </div>
           </article>
           <article class="timeline-item">
@@ -660,6 +748,25 @@
         </div>
         <a class="inline-link recommendations-link" href="https://www.linkedin.com/in/redarafi/details/recommendations/" target="_blank" rel="noopener noreferrer">View recommendations on LinkedIn <span aria-hidden="true">↗</span></a>
       </section>
+      <section class="resume-request-section container" id="resume-request" aria-labelledby="resume-request-heading">
+        <div class="resume-request-copy">
+          <p class="eyebrow">LET’S CONNECT</p>
+          <h2 id="resume-request-heading">Want my <span class="serif-accent">résumé?</span></h2>
+          <p>Leave your email address and, if you like, a few words about the opportunity. I’ll reply personally with my résumé.</p>
+          <p class="resume-request-note" id="resume-request-note">Your email and message are delivered through <a class="inline-link" href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a>. You’ll continue there to complete the request.</p>
+        </div>
+        <form class="resume-request-form" action="https://formsubmit.co/reda.rafi.pro@gmail.com" method="post" aria-labelledby="resume-request-heading" aria-describedby="resume-request-note">
+          <input type="hidden" name="_subject" value="Portfolio: résumé request">
+          <input type="hidden" name="_template" value="table">
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="resume-email">Your email address <span class="subtle">(required)</span></label>
+          <input id="resume-email" type="email" name="email" autocomplete="email" placeholder="you@company.com" maxlength="254" required>
+          <label for="resume-message">About the opportunity <span class="subtle">(optional)</span></label>
+          <textarea id="resume-message" name="message" rows="4" maxlength="3000" placeholder="A role, a project, or a quick introduction…"></textarea>
+          <button class="button button-primary" type="submit">Request my résumé <span aria-hidden="true">↗</span></button>
+          <p class="resume-request-note">Prefer email? <a class="inline-link" href="mailto:reda.rafi.pro@gmail.com?subject=Portfolio%3A%20r%C3%A9sum%C3%A9%20request">Write to me directly</a>.</p>
+        </form>
+      </section>
       <section class="contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="container contact-inner">
           <div>
@@ -671,7 +778,7 @@
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/redarafi/" target="_blank" rel="noopener noreferrer" data-profile="linkedin"><span><b class="social-icon" aria-hidden="true">in</b>LinkedIn</span><span aria-hidden="true">↗</span></a>
             <a href="https://github.com/RedaRafi" data-profile="github" target="_blank" rel="noopener noreferrer"><span><b class="social-icon" aria-hidden="true">&lt;/&gt;</b>GitHub</span><span aria-hidden="true">↗</span></a>
-            <a href="./assets/reda-rafi-resume.pdf" download data-profile="resume"><span><b class="social-icon" aria-hidden="true">↳</b>Résumé</span><span aria-hidden="true">↓</span></a>
+            <a href="#resume-request"><span><b class="social-icon" aria-hidden="true">↳</b>Request my résumé</span><span aria-hidden="true">↗</span></a>
             <button type="button" id="copy-email"><span><b class="social-icon" aria-hidden="true">▢</b><span id="copy-label">Copy email address</span></span><span aria-hidden="true">↗</span></button>
             <p id="copy-feedback" role="status" class="mono subtle"></p>
           </div>
@@ -696,7 +803,7 @@
         <div class="case-tags tags" id="case-tags"></div>
         <div id="case-sections"></div>
         <p class="case-footnote">Based on the professional experience described in my résumé. These notes describe my contribution without exposing employer source code or asserting unreported performance metrics.</p>
-        <a class="inline-link" href="./assets/reda-rafi-resume.pdf" target="_blank" rel="noopener">Read the résumé <span aria-hidden="true">↗</span></a>
+        <a class="inline-link" id="case-resume-request" href="#resume-request">Request my résumé <span aria-hidden="true">↗</span></a>
       </div>
     </dialog>
   </body>
