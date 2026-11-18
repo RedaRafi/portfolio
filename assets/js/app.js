@@ -60,7 +60,7 @@ function setupNavigation() {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !nav.hidden) { close(); toggle.focus(); }
   });
-  matchMedia('(min-width: 601px)').addEventListener('change', (event) => { if (event.matches) close(); });
+  matchMedia('(min-width: 701px)').addEventListener('change', (event) => { if (event.matches) close(); });
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -72,7 +72,7 @@ function setupNavigation() {
         });
       }
     }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-    selectAll('#work, #playground, #experience').forEach((section) => observer.observe(section));
+    selectAll('#work, #playground, #expertise, #experience').forEach((section) => observer.observe(section));
   }
 }
 
